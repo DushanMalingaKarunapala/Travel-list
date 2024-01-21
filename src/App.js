@@ -1,10 +1,15 @@
-
-import './App.css';
+import { Header } from "./components/header";
+import { Form } from "./components/form";
+import { PackingList } from "./components/packing-list";
+import { Status } from "./components/status";
 
 function App() {
   return (
     <div className="App">
-      heeee
+      <Header />
+      <Form />
+      <PackingList />
+      <Status />
     </div>
   );
 }
