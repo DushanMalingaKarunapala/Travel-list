@@ -9,11 +9,15 @@ const initialItems = [
   { id: 5, description: "Speaker", quantity: 1, packed: true },
 ];
 
-export const PackingList = () => {
+export const PackingList = ({ items }) => {
+  //recieve the items state from the app.js as a prop
   return (
     <div className="list">
       <ul>
-        {initialItems.map((item) => (
+        {/* {initialItems.map((item) => (   before used initial items to render the initial list. but now below items new array which was created in app.js is used to change the state
+          <Items item={item} key={item.id} />
+        ))} */}
+        {items.map((item) => (
           <Items item={item} key={item.id} />
         ))}
       </ul>

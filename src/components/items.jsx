@@ -6,7 +6,7 @@ export const Items = ({ item }) => {
       <span style={item.packed ? { textDecoration: "line-through" } : {}}>
         {" "}
         {/*if the item is packed = true then apply line-through style*/}
-        {item.description} {item.quantity}
+        {item.descriptioninput} {item.selectedquantity}
       </span>
       <button>❌</button>
     </li>
